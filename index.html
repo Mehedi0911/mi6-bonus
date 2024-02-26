@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+    <nav class="container mx-auto py-6 border-b-2 ">
+        <div class="flex items-center justify-between">
+            <div class="bg-slate-100 p-3 rounded-md shadow-xl">
+                <img src="./images/Logo.png" alt="">
+            </div>
+            <div class="">
+                <button id="sort-btn"
+                    class="btn btn-ghost hover:bg-slate-200 bg-slate-100 font-semibold text-xl text-slate-800 h-14 rounded-md">Sort
+                    By View</button>
+            </div>
+            <div>
+                <button class="bg-red-500 text-xl text-white px-6 py-3 rounded-md">Blog</button>
+            </div>
+        </div>
+    </nav>
+    <section class="flex justify-center items-center">
+        <div id="btn-container" class="mt-12 space-x-4 ml-24">
+            <button class="btn  btn-ghost bg-slate-700 text-white text-lg">All</button>
+            <button class="btn btn-ghost bg-slate-700 text-white text-lg">Music</button>
+            <button class="btn btn-ghost bg-slate-700 text-white text-lg">Comedy</button>
+            <button class="btn btn-ghost bg-slate-700 text-white text-lg">Drawing</button>
+    </section>
+
+    <section class="mt-12">
+        <div id="error-element" class="hidden  mt-24">
+            <img class="mx-auto" src="./images/error-icon.svg" alt="">
+            <h1 class="text-3xl mt-3 text-slate-600 text-center">Opps!! There are No data For This Category</h1>
+        </div>
+        <div id="card-container" class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <div class="card w-full bg-base-100 shadow-xl">
+                <figure class="overflow-hidden h-72">
+                    <img class="w-full" src="./images/smells.jpg" alt="Shoes" />
+                    <h6 class="absolute bottom-[40%] right-12">0 hr</h6>
+                </figure>
+                <div class="card-body">
+                    <div class="flex space-x-4 justify-start items-start">
+                        <div>
+                            <img class="w-12 h-12 rounded-full" src="./images/smells.jpg" alt="Shoes" />
+                        </div>
+                        <div>
+                            <h2 class="card-title">Laugh At My Pain</h2>
+                            <div class="flex mt-3">
+                                <p class="">Author Name</p>
+                                <img class="w-6 h-6" src="./images/verify.png" alt="">
+                            </div>
+                            <p class="mt-3">100k Views</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
+
+</html>
